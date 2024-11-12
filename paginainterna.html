@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corinthians</title>
+    <link rel="stylesheet" href="paginainterna.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <script src="paginainterna.js"></script>
+
+    <header>
+        <a href="paginainterna.html"><img src="elenco.img/escudo.png" alt="escudo" width="9%""></a>
+        <h1>Corinthians</h1>
+        <i id="sair" class="fas fa-sign-out-alt" style="color: white;" title="Sair da conta"></i>
+
+        <nav>
+            <ul>
+                <li><a href="#elenco">Jogadores</a></li>
+                <li><a href="#partidas">Partidas</a></li>
+                <li><a href="#estatisticas">Estatísticas</a></li>
+            </ul>
+            <ul>
+                <li><a href="#idolos">Ídolos</a></li>
+                <li><a href="#titulos">Títulos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="campoPesquisa" placeholder="Buscar tópico">
+                <button onclick="buscarTopico()">Pesquisar</button>
+            </div>
+        </nav>
+    </header>
+    <section id="elenco">
+        <h2>Elenco</h2>
+        <div class="jogadores_container">
+            <div class="jogador_card" id="hugo souza">
+                <img src="elenco.img/hugosouza.png" alt="Hugo Souza">
+                <h3>Hugo Souza</h3>
+                <p>Goleiro</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/donelli.png" alt="M. Donelli">
+                <h3>M. Donelli</h3>
+                <p>Goleiro</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/felix.png" alt="Felix Torres">
+                <h3>Felix Torres</h3>
+                <p>Zagueiro</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/ramalho.png" alt="André ramalho">
+                <h3>André Ramalho</h3>
+                <p>Zagueiro</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/gh.png" alt="Gustavo Henrique">
+                <h3>Gustavo Henrique</h3>
+                <p>Zagueiro</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/Caca.png" alt="caca">
+                <h3>Cacá</h3>
+                <p>Zagueiro</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/matheuzinho.png" alt="matheuzinho">
+                <h3>Matheuzinho</h3>
+                <p>Lateral Direito</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/fagner.png" alt="Fagner">
+                <h3>Fagner</h3>
+                <p>Lateral Direito</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/hugo.png" alt="hugo">
+                <h3>Hugo</h3>
+                <p>Lateral Esquerdo</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/bidu.png" alt="bidu">
+                <h3>Matheus Bidu</h3>
+                <p>Lateral Esquerdo</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/raniele.png" alt="raniele">
+                <h3>Raniele</h3>
+                <p>Volante</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/martinez.png" alt="martinez">
+                <h3>José Martinez</h3>
+                <p>Volante</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/charles.png" alt="charles">
+                <h3>Charles</h3>
+                <p>Volante</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/bidon.png" alt="bidon">
+                <h3>Breno Bidon</h3>
+                <p>Volante</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/alexsantana.png" alt="alexsantana">
+                <h3>Alex Santana</h3>
+                <p>Volante</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/ryan.png" alt="ryan">
+                <h3>Ryan</h3>
+                <p>Volante</p>
+            </div>
+            <div class="jogador_card">
+                <img src="elenco.img/carrillo.png" alt="carrillo">
+                <h3>André Carrillo</h3>
+                <p>Meia</p>
+            </div>
+            <div class="jogador_card" id="coronado">
+                <img src="elenco.img/coronado.png" alt="coronado">
+                <h3>Igor Coronado</h3>
+                <p>Meia</p>
+            </div>
+            <div class="jogador_card" id="garro">
+                <img src="elenco.img/garro.png" alt="garro">
+                <h3>Rodrigo Garro</h3>
+                <p>Meia</p>
+            </div>
+            <div class="jogador_card" id="talles">
+                <img src="elenco.img/talles.png" alt="talles magno">
+                <h3>Talles Magno</h3>
+                <p>Atacante</p>
+            </div>
+            <div class="jogador_card" id="depay">
+                <img src="elenco.img/memphis.png" alt="memphis depay">
+                <h3>Memphis Depay</h3>
+                <p>Atacante</p>
+            </div>
+            <div class="jogador_card"  id="yuri">
+                <img src="elenco.img/yuri.png" alt="yuri alberto">
+                <h3>Yuri Alberto</h3>
+                <p>Atacante</p>
+            </div>
+            <div class="jogador_card" id="romero">
+                <img src="elenco.img/romero.png" alt="romero">
+                <h3>Romero</h3>
+                <p>Atacante</p>
+            </div>
+            <div class="jogador_card" id="hector">
+                <img src="elenco.img/hector.png" alt="hector hernandez">
+                <h3>Héctor Hernández</h3>
+                <p>Atacante</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partidas">
+        <h2>Próximos Jogos</h2>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Adversário</th>
+                <th>Horário</th>
+                <th>Local</th>
+            </tr>
+            <tr>
+                <td>Qua, 02/10</td>
+                <td>Flamengo</td>
+                <td>21:30</td>
+                <td>Maracanã, RJ</td>
+            </tr>
+            <tr>
+                <td>Sáb, 05/10</td>
+                <td>Internacional</td>
+                <td>19:00</td>
+                <td>Neo Química Arena</td>
+            </tr>
+            <tr>
+                <td>Qui, 17/10</td>
+                <td>Flamengo</td>
+                <td>20:00</td>
+                <td>Neo Química Arena</td>
+            </tr>
+            <tr>
+                <td>Dom, 20/10</td>
+                <td>Athletico-PR</td>
+                <td>A confirmar</td>
+                <td>Neo Química Arena</td>
+            </tr>
+            <tr>
+                <td>Sáb, 26/10</td>
+                <td>Cuiába</td>
+                <td>A confirmar</td>
+                <td>Arena Pantanal, MT</td>
+            </tr>
+            <tr>
+                <td>Qua, 06/11</td>
+                <td>Palmeiras</td>
+                <td>A confirmar</td>
+                <td>Neo Química Arena</td>
+            </tr>
+            <tr>
+                <td>Qua, 13/11</td>
+                <td>Vitória</td>
+                <td>A confirmar</td>
+                <td>Barradão, BA</td>
+            </tr>
+            <tr>
+                <td>Qua, 20/11</td>
+                <td>Cruzeiro</td>
+                <td>A confirmar</td>
+                <td>Neo Química Arena</td>
+            </tr>
+            <tr>
+                <td>Dom, 24/11</td>
+                <td>Vasco da Gama</td>
+                <td>A confirmar</td>
+                <td>Neo Química Arena</td>
+            </tr>
+            <tr>
+                <td>Dom, 01/12</td>
+                <td>Criciúma</td>
+                <td>A confirmar</td>
+                <td>Heriberto Hülse, SC</td>
+            </tr>
+            <tr>
+                <td>Qua, 04/12</td>
+                <td>Bahia</td>
+                <td>A confirmar</td>
+                <td>Neo Química Arena</td>
+            </tr>
+            <tr>
+                <td>Dom, 08/12</td>
+                <td>Grêmio</td>
+                <td>A confirmar</td>
+                <td>Arena do Grêmio, RS</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="estatisticas">
+        <h2>Estatísticas do Time</h2>
+        <ul>
+            <li>Jogos na Temporada: 57</li>
+            <li>Vitórias na temporada: 22</li>
+            <li>Empates na temporada: 15</li>
+            <li>Derrotas na temporada: 20</li>
+            <li>Gols marcados: 62</li>
+            <li>Gols sofridos: 52</li>
+        </ul>
+        <div class="table-container">
+            <div id="artilheiros-table" class="table-content">
+                <h2>Artilheiros - 2024</h2>
+                <table class="artilheiros" id="artilheiros">
+                    <thead>
+                        <tr>
+                            <th>Jogador</th>
+                            <th>Jogos</th>
+                            <th>Gols</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Yuri Alberto</td>
+                            <td>45</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>Romero</td>
+                            <td>47</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Rodrigo Garro</td>
+                            <td>48</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Cacá</td>
+                            <td>34</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Igor Coronado</td>
+                            <td>33</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="assistencias-table" class="table-content" style="display: none;">
+                <h2>Assistências - 2024</h2>
+                <table class="artilheiros" id="assistências">
+                    <thead>
+                        <tr>
+                            <th>Jogador</th>
+                            <th>Jogos</th>
+                            <th>Assistência</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rodrigo Garro</td>
+                            <td>48</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Hugo</td>
+                            <td>48</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Fagner</td>
+                            <td>38</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Yuri Alberto</td>
+                            <td>45</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Romero</td>
+                            <td>47</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <button onclick="trocartabela()" class="botao">Alternar Tabelas</button>
+        </div>  
+    </section>
+    <section id="idolos">
+        <h2>Ídolos</h2>
+        <div class="idolos_container">
+            <div class="idolos_card">
+                <img src="idolos.img/socrates.jpg" alt="socrates">
+                <h3>Sócrates</h3>
+                <p>Meia</p>
+                <p>(1978–1984)</p>
+                <p> O "Doutor" foi um dos maiores ídolos da história do Corinthians. Líder da Democracia Corinthiana, Sócrates atuou em 297 partidas, marcou 172 gols e foi essencial na conquista dos Campeonatos Paulistas de 1979, 1982 e 1983. Sua inteligência e visão de jogo fizeram dele uma lenda no clube.</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/cassio.jpg" alt="cassio">
+                <h3>Cássio</h3>
+                <p>Goleiro</p>
+                <p>(2012–2024)</p>
+                <p> O goleiro Cássio é o maior ídolo recente do Corinthians e um dos jogadores mais vitoriosos da história do clube. Desde sua chegada, já disputou mais de 630 partidas, conquistando títulos como a Libertadores e o Mundial de Clubes em 2012, além de várias edições do Campeonato Brasileiro e Paulistas.</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/marcelinho_carioca.jpg" alt="marcelinho carioca">
+                <h3>Marcelinho Carioca</h3>
+                <p>Atacante</p>
+                <p>(1994–1997, 1998–2001)</p>
+                <p> Conhecido como "Pé de Anjo" por sua incrível habilidade em cobranças de falta, Marcelinho Carioca é um dos maiores jogadores da história do Corinthians. Disputou 433 jogos, marcou 206 gols e conquistou 10 títulos, incluindo dois Brasileiros (1998, 1999) e três Paulistas (1995, 1997, 1999).</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/neto.jpg" alt="craque neto">
+                <h3>Craque Neto</h3>
+                <p>Meia</p>
+                <p>(1989–1993)</p>
+                <p> Um dos grandes ídolos dos anos 1990, Neto foi o craque da conquista do Campeonato Brasileiro de 1990, o primeiro da história do Corinthians. Em suas duas passagens pelo clube, disputou 228 partidas e marcou 80 gols, sendo sempre lembrado por sua habilidade em bolas paradas.</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/rivelino.jpg" alt="Rivelino">
+                <h3>Rivelino</h3>
+                <p>Meia</p>
+                <p>(1965–1974)</p>
+                <p> Considerado um dos maiores jogadores da história do futebol brasileiro, Rivelino foi revelado pelo Corinthians, onde atuou em 474 partidas e marcou 144 gols. Apesar de não ter conquistado títulos expressivos com o clube, sua técnica apurada e talento inquestionável marcaram época.</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/luizinho.jpg" alt="luizinho">
+                <h3>Luizinho</h3>
+                <p>Atacante</p>
+                <p>(1948–1967)</p>
+                <p> Apelidado de "Pequeno Polegar", Luizinho foi um dos maiores ídolos da história do clube, com 606 partidas e 175 gols marcados. Sua técnica refinada e amor pelo Corinthians fizeram dele uma lenda, participando de títulos como o Campeonato Paulista de 1951, 1952 e 1954.</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/basilio.jpg" alt="basilio">
+                <h3>Basílio</h3>
+                <p>Meia</p>
+                <p>(1975–1981)</p>
+                <p> O "Pé de Anjo" original, Basílio, é eternamente lembrado pelo gol que encerrou o jejum de títulos do Corinthians ao marcar o gol da final do Campeonato Paulista de 1977, levando o clube à vitória contra a Ponte Preta. Ele atuou em 253 jogos e marcou 25 gols pelo Timão.</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/emerson_sheik.jpg" alt="emerson_sheik">
+                <h3>Emerson Sheik</h3>
+                <p>Atacante</p>
+                <p>(2011–2014, 2015, 2017–2018)</p>
+                <p> Autor dos dois gols na final da Libertadores de 2012, Sheik é herói do título inédito. Conquistou também o Mundial (2012), o Brasileiro (2011) e o Paulistão (2013). Fez 192 jogos e 26 gols pelo clube.</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/neco.jpg" alt="Neco">
+                <h3>Neco</h3>
+                <p>Atacante</p>
+                <p>(1913–1930)</p>
+                <p> Primeiro grande ídolo do Corinthians, Neco marcou 239 gols em 296 jogos. Foi campeão paulista 7 vezes, sendo fundamental na história inicial do clube.</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/wladimir.jpg" alt="Wladimir">
+                <h3>Wladimir</h3>
+                <p>Lateral</p>
+                <p>(1972–1985, 1987)</p>
+                <p> Recordista de jogos do Corinthians, Wladimir fez 805 partidas e marcou 32 gols. Participou da Democracia Corinthiana e conquistou 4 Paulistas, incluindo o título de 1977.</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/ze_maria.jpg" alt="Zé Maria">
+                <h3>Zé Maria</h3>
+                <p>Lateral</p>
+                <p> (1970–1983)</p>
+                <p> "Super Zé" foi lateral-direito por 598 jogos, marcando 17 gols. Coniderado o Deus da raça, conquistou o Paulista de 1977, encerrando o jejum de 23 anos sem títulos.</p>
+            </div>
+            <div class="idolos_card">
+                <img src="idolos.img/casagrande.jpg" alt="casagrande">
+                <h3>Casagrande</h3>
+                <p>Atacante</p>
+                <p>(1982–1986, 1994)</p>
+                <p> Líder da Democracia Corinthiana, Casagrande fez 256 jogos e 103 gols, conquistando dois Paulistas (1982, 1983). É um dos grandes nomes da história do clube.</p>
+            </div>
+        </div>
+    </section>
+    <section id="titulos">
+        <h2>Principais Títulos</h2>
+        <div class="titulos_container">
+            <div class="titulos_card">
+                <img src="titulos.img/mundial.jpeg" alt="taças mundial">
+                <h3>Mundial Fifa Interclubes (2)</h3>
+                <p>2000<br>2012</p>
+            </div>
+            <div class="titulos_card">
+                <img src="titulos.img/liberta.webp" alt="taça Libertadores">
+                <h3>Libertadores da América (1)</h3>
+                <p>2012</p>
+            </div>
+            <div class="titulos_card">
+                <img src="titulos.img/recopa.jpg" alt="taça Recopa Sul-Americana">
+                <h3>Recopa Sul-Americana (1)</h3>
+                <p>2013</p>
+            </div>
+        </div>
+        <div class="titulos_container">
+            <div class="titulos_card">
+                <img src="titulos.img/brasileiro.webp" alt="taça Campeonato Brasileiro">
+                <h3>Campeonato Brasileiro (7)</h3>
+                <p>1990<br>1998<br>1999<br>2005<br>2011<br>2015<br>2017</p>
+            </div>
+            <div class="titulos_card">
+                <img src="titulos.img/copadobrasil.jpg" alt="taça Copa do Brasil">
+                <h3>Copa do Brasil (3)</h3>
+                <p>1995<br>2002<br>2009</p>
+            </div>
+            <div class="titulos_card">
+                <img src="titulos.img/paulista.jpg" alt="taça Campeonato Paulista">
+                <h3>Campeonato Paulista (30)</h3>
+                <p>1914 1916 1922 1923 1924 1928 1929 1930 1937 1938 1939 1941 1951 1952 1954 1977 1979 1982 1983 1988 1995 1997 1999 2001 2003 2009 2013 2017 2018 2019</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <h1>Contato:</h1>
+        <p>Entre em contato conosco: contato@timedopovo.com</a></p>
+        <p>&copy; 2024 Desenvolvido por Wendell Ramos</p>
+        <a href="paginainterna.html"><img src="elenco.img/escudo.png" alt="escudo" width="9%""></a>
+    </footer>
+</body>
+</html>
