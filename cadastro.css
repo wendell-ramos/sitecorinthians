@@ -1,11 +1,11 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-body {
+body{
     background-color: #000;
     color: #fff;
     display: flex;
@@ -14,7 +14,7 @@ body {
     height: 100vh;
 }
 
-.container {
+.container{
     text-align: center;
     background-color: #1c1c1c;
     padding: 20px;
@@ -23,36 +23,36 @@ body {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-.logo img {
+.logo img{
     width: 80px;
     margin-bottom: 15px;
 }
 
-h1 {
+h1{
     font-size: 1.5em;
     margin-bottom: 20px;
     color: #fff;
 }
 
-form {
+form{
     display: flex;
     flex-direction: column;
 }
 
-label {
+label{
     font-weight: bold;
     margin-bottom: 5px;
     color: #ccc;
 }
 
-input {
+input{
     padding: 8px;
     margin-bottom: 15px;
     border: none;
     border-radius: 4px;
 }
 
-button {
+button{
     padding: 10px;
     background-color: #333;
     color: #fff;
@@ -62,6 +62,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover{
     background-color: #555;
+
 }
