@@ -40,16 +40,13 @@ function buscarTopico() {
     }
     
 }
-// Seleciona o ícone de logout pelo ID
 const sair = document.getElementById("sair");
 
-// Executa o código após o DOM estar completamente carregado
 document.addEventListener("DOMContentLoaded", function() {
-    // Seleciona o ícone pelo ID e adiciona o evento de clique
     const sair = document.getElementById("sair");
     sair.addEventListener("click", function() {
-        // Remove o item do localStorage e redireciona para a página de login
         localStorage.removeItem("array_usuarios");
         window.location.href = "index.html";
     });
+
 });
