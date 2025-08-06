@@ -5,21 +5,20 @@ body{
     background-color: #ffffff;
     color: #333;
 }
-header {
+header{
     background-color: #000;
     color: white;
     padding: 1rem;
     text-align: center;
-    position: relative; /* Garante que o ícone posicionado absolute use o header como referência */
+    position: relative;
 }
 
-/* Estilos para o ícone de logout */
-header .fa-sign-out-alt {
-    font-size: 2.8em; /* Aumenta o tamanho do ícone */
+header .fa-sign-out-alt{
+    font-size: 2.8em; 
     position: absolute;
-    top: 45px; /* Mantém um leve afastamento do topo */
-    right: 50px; /* Aumenta a distância da borda direita */
-    cursor: pointer; /* Exibe o cursor de mão ao passar sobre o ícone */
+    top: 45px; 
+    right: 50px;
+    cursor: pointer;
 }
 
 nav ul{
@@ -144,4 +143,5 @@ button:hover {
 button:active {
     background-color: #1a1a1a;
     transform: scale(0.98);
+
 }
